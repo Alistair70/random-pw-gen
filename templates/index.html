@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class = "container">
+        <h1>Random Password Generator</h1>
+        <div>
+            <label for="length">Password Length:</label>
+            <input type="range" id="length" min="6" max="50" value="10">
+            <span id="lengthValue">10</span>
+        </div>
+        <br>
+        <div class="option">
+            <label for="includeUppercase">Include Uppercase</label>
+            <div class="toggle">
+                <input type="checkbox" id="includeUppercase" class="checkbox">
+                <label for="includeUppercase" class="toggle-pill"></label>
+            </div>
+        </div>
+        <br>
+        <div class="option">
+            <label class="li" for="includeSymbols">Include Symbols</label>
+            <div class="toggle">
+                <input type="checkbox" id="includeSymbols" class="checkbox">
+                <label for="includeSymbols" class="toggle-pill"></label>
+            </div>
+        </div>
+        <br>
+        <div class="option">
+            <label for="includeNumbers">Include Numbers</label>
+            <div class="toggle">
+                <input type="checkbox" id="includeNumbers" class="checkbox">
+                <label for="includeNumbers" class="toggle-pill"></label>
+            </div>
+        </div>
+        <br>
+        <button  id="generateButton" class = "btn_new">Generate Password</button>
+        <br>
+        <div>
+            <h2>Your Password:</h2>
+            <p id="password">Click Generate to Generate Password</p>
+        </div>
+    </div>
+    <script src="static/index.js"></script>
+</body>
+</html>

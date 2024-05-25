@@ -1,0 +1,106 @@
+/* Your existing CSS */
+
+.container {
+    min-width: 250px;
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    align-items: center;
+    text-align: center; 
+    align-self: center;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.toggle .checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-pill {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 12px;
+    transition: background-color 0.3s;
+}
+
+.toggle-pill:before {
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.checkbox:checked + .toggle-pill {
+    background-color: #007bff;
+}
+
+.checkbox:checked + .toggle-pill:before {
+    transform: translateX(24px);
+}
+
+h1{
+    font-family: Arial, sans-serif;
+    color: #000;
+    align-self: center;
+    font-size: 24;
+}
+
+h2{
+    font-family: Arial, sans-serif;
+    color: #000;
+    align-self: center;
+}
+
+label{
+    color:#333;
+    font-family: Arial, sans-serif;
+}
+
+p{
+    color:#7b7b7b;
+    font-family: Arial, sans-serif;
+}
+
+.btn_new{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: limegreen;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    justify-self: center;
+    align-self: center;
+    min-width: 150px;
+    min-height: 25px;
+}
+.btn_new:hover{
+    background-color: green;
+    color: black;
+}
